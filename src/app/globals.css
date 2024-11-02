@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  @media only screen and (min-width: 768px) {
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+      background-color: #d1d5db;
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    ::-webkit-scrollbar-thumb {
+      background-color: #007aff;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+    }
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
