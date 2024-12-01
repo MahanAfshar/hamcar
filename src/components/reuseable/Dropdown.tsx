@@ -8,6 +8,7 @@ interface Props {
   placeholder: string;
   options: string[];
   optionsClassName?: string;
+  dynamicValue?: boolean;
   onClick: (value: string) => void;
 }
 
@@ -16,6 +17,7 @@ export default function Dropdown({
   placeholder,
   options,
   optionsClassName,
+  dynamicValue,
   onClick,
 }: Props) {
   const [value, setValue] = useState(placeholder);
@@ -28,7 +30,7 @@ export default function Dropdown({
         onClick={() => setIsOpen((prev) => !prev)}
         onBlur={() => setTimeout(() => setIsOpen(false), 100)}
       >
-        {value}
+        {dynamicValue ? value : placeholder}
         <Image
           src={arrow}
           width={12}

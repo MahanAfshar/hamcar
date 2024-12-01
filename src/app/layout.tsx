@@ -29,8 +29,8 @@ const yekanBakh = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "intership task",
-  description: "intership task for level up company",
+  title: "Hamcar",
+  description: "Hamcar for level up company",
 };
 
 export default function RootLayout({

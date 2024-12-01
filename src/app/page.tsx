@@ -82,6 +82,7 @@ export default function HomePage() {
             className="bg-white-100 gap-4 sm:py-2 sm:min-w-[200px]"
             optionsClassName="bg-white-100 sm:*:py-2"
             options={dropdowns}
+            dynamicValue
             onClick={() => {}}
           />
         </div>

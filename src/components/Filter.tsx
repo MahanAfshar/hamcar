@@ -9,7 +9,7 @@ export default function Filter() {
   const [filters, setFilters] = useState<string[]>([]);
 
   return (
-    <div className="hidden md:flex flex-col gap-4">
+    <div className="hidden md:flex flex-col gap-4 sticky top-28">
       {filters.length > 0 && (
         <div className="bg-white-200 rounded-md shadow-lg shadow-black-200/20 p-1 xl:p-3 hidden md:block text-[13px] lg:text-base">
           <div className="flex items-center justify-between">
